@@ -65,6 +65,7 @@ public class VulnerableTaskHolder implements Serializable {
         Process p = Runtime.getRuntime().exec(taskAction);
         BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
         String line = null;
+        System.out.println("HELLO");
         while ((line = in.readLine()) != null) {
           log.info(line);
         }
